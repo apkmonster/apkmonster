@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>ApkMonster — Ports and APK games</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="ApkMonsterwt.png">
+    <meta name="description" content="ApkMonster — ported games for Android. Download APKs after completing a task.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrap">
+        <header class="site-header" role="banner">
+            <a href="index.html" class="logo" aria-label="ApkMonster">
+                <img src="ApkMonsterlogo.png" alt="ApkMonster logo">
+            </a>
+            <div class="controls" role="region" aria-label="Site controls">
+                <nav class="main-nav" aria-label="Main navigation">
+                    <a href="about.html" class="nav-link">About us</a>
+                    <a href="privacy-policy.html" class="nav-link">Privacy Policy</a>
+                    <a href="terms-of-service.html" class="nav-link">Terms</a>
+                </nav>
+            </div>
+        </header>
+
+        <section class="hero" aria-label="Main section">
+            <div class="hero-left">
+                <h1>ApkMonster - Your ultimate destination for awesome games.</h1>
+                <p>Minimalist gamer interface: quick engagement, version details, and convenient cards.</p>
+                <div class="cta-row">
+                    <a href="#games" class="btn" id="exploreBtn">View Games</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="catalog" id="games" aria-label="Games catalog">
+            <div class="cards-wrap">
+                <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:10px;">
+                    <h3 style="margin:0">Featured</h3>
+                    <div style="color:var(--muted); font-size:13px">Shown <span id="shownCount">0</span> of <span id="totalCount">0</span></div>
+                </div>
+                <div class="cards-grid" id="gamesGrid" aria-live="polite">
+                    <a href="gtavlayout.html" class="card" onclick="openDownloadModal('GTA V MOBILE'); return false;">
+                        <div class="thumb">
+                            <img src="gta/gtalogo.webp" alt="GTA V MOBILE">
+                        </div>
+                        <div class="game-title">GTA V MOBILE</div>
+                        <div class="meta">
+                            <span class="pill">v 1.2.0</span>
+                            <span class="pill">1.3 GB</span>
+                            <span class="pill">2025-04-08</span>
+                        </div>
+                        <div class="card-footer">
+                            <div class="tag-cpa">CPA</div>
+                            <div class="download-btn-text">Download</div>
+                        </div>
+                    </a>
+
+                    <a href="beamnglayout.html" class="card" onclick="openDownloadModal('BeamNG.drive MOBILE'); return false;">
+                        <div class="thumb">
+                            <img src="bimka/bnlogo.png" alt="BeamNG.drive MOBILE">
+                        </div>
+                        <div class="game-title">BeamNG.drive MOBILE</div>
+                        <div class="meta">
+                            <span class="pill">v 2.5.1</span>
+                            <span class="pill">1.2 GB</span>
+                            <span class="pill">2025-04-10</span>
+                        </div>
+                        <div class="card-footer">
+                            <div class="tag-cpa">CPA</div>
+                            <div class="download-btn-text">Download</div>
+                        </div>
+                    </a>
+
+                    <a href="tloulayout.html" class="card" onclick="openDownloadModal('The Last of Us Mobile'); return false;">
+                        <div class="thumb">
+                            <img src="tlou1/tloulogo.png" alt="The Last of Us Mobile">
+                        </div>
+                        <div class="game-title">The Last of Us Mobile</div>
+                        <div class="meta">
+                            <span class="pill">v 3.0.0</span>
+                            <span class="pill">3.2 GB</span>
+                            <span class="pill">2025-04-01</span>
+                        </div>
+                        <div class="card-footer">
+                            <div class="tag-cpa">CPA</div>
+                            <div class="download-btn-text">Download</div>
+                        </div>
+                    </a>
+
+                    <a href="cp2077layout.html" class="card" onclick="openDownloadModal('Cyberpunk 2077 Mobile'); return false;">
+                        <div class="thumb">
+                            <img src="cyberp2077/cybericon2.png" alt="Cyberpunk 2077 Mobile">
+                        </div>
+                        <div class="game-title">Cyberpunk 2077 Mobile</div>
+                        <div class="meta">
+                            <span class="pill">v 1.8.5</span>
+                            <span class="pill">2.4 GB</span>
+                            <span class="pill">2025-03-25</span>
+                        </div>
+                        <div class="card-footer">
+                            <div class="tag-cpa">CPA</div>
+                            <div class="download-btn-text">Download</div>
+                        </div>
+                    </a>
+
+                    <a href="u2layout.html" class="card" onclick="openDownloadModal('NFS Underground 2 Mobile'); return false;">
+                        <div class="thumb">
+                            <img src="nfsu2/nfsu2logo.png" alt="NFS Underground 2 Mobile">
+                        </div>
+                        <div class="game-title">NFS Underground 2</div>
+                        <div class="meta">
+                            <span class="pill">v 4.1.2</span>
+                            <span class="pill">1.89 GB</span>
+                            <span class="pill">2025-04-09</span>
+                        </div>
+                        <div class="card-footer">
+                            <div class="tag-cpa">CPA</div>
+                            <div class="download-btn-text">Download</div>
+                        </div>
+                    </a>
+
+                    <a href="assettoclayout.html" class="card" onclick="openDownloadModal('Assetto Corsa Mobile'); return false;">
+                        <div class="thumb">
+                            <img src="assettoc/acorsalogo.webp" alt="Assetto Corsa Mobile">
+                        </div>
+                        <div class="game-title">Assetto Corsa Mobile</div>
+                        <div class="meta">
+                            <span class="pill">v 1.0.3</span>
+                            <span class="pill">1.19 GB</span>
+                            <span class="pill">2025-03-30</span>
+                        </div>
+                        <div class="card-footer">
+                            <div class="tag-cpa">CPA</div>
+                            <div class="download-btn-text">Download</div>
+                        </div>
+                    </a>
+					 <a href="mw2005layout.html" class="card" onclick="openDownloadModal('NFS Most Wanted 2005'); return false;">
+                        <div class="thumb">
+                            <img src="nfsmw2005/nfslogo.webp" alt="NFS Most Wanted 2005 Mobile">
+                        </div>
+                        <div class="game-title">NFS Most Wanted 2005 Mobile</div>
+                        <div class="meta">
+                            <span class="pill">v 1.0.3</span>
+                            <span class="pill">1.01 GB</span>
+                            <span class="pill">2024-12-21</span>
+                        </div>
+                        <div class="card-footer">
+                            <div class="tag-cpa">CPA</div>
+                            <div class="download-btn-text">Download</div>
+                        </div>
+                    </a>
+					<a href="ps3layout.html" class="card" onclick="openDownloadModal('PS3 Emulator Mobile'); return false;">
+                        <div class="thumb">
+                            <img src="ps3e/ps3emulator.webp" alt="PS3 Emulator Mobile">
+                        </div>
+                        <div class="game-title">PS3 Emulator (RPCS3) Mobile </div>
+                        <div class="meta">
+                            <span class="pill">v 1.2.2</span>
+                            <span class="pill">82 MB</span>
+                            <span class="pill">2024-09-04</span>
+                        </div>
+                        <div class="card-footer">
+                            <div class="tag-cpa">CPA</div>
+                            <div class="download-btn-text">Download</div>
+                        </div>
+                    </a>
+					<a href="snowrlayout.html" class="card" onclick="openDownloadModal('SnowRunner Mobile'); return false;">
+                        <div class="thumb">
+                            <img src="snowr/snowlogo.webp" alt="SnowRunner Mobile">
+                        </div>
+                        <div class="game-title">SnowRunner Mobile </div>
+                        <div class="meta">
+                            <span class="pill">v 1.5.0</span>
+                            <span class="pill">1.2 GB</span>
+                            <span class="pill">2025-04-02</span>
+                        </div>
+                        <div class="card-footer">
+                            <div class="tag-cpa">CPA</div>
+                            <div class="download-btn-text">Download</div>
+                        </div>
+                    </a>
+					<a href="eurots2layout.html" class="card" onclick="openDownloadModal('ETS2 Mobile'); return false;">
+                        <div class="thumb">
+                            <img src="ets2/etsicon.webp" alt="ETS2 Mobile">
+                        </div>
+                        <div class="game-title">ETS2 Mobile </div>
+                        <div class="meta">
+                            <span class="pill">v 1.5.0</span>
+                            <span class="pill">1.4 GB</span>
+                            <span class="pill">2025-04-02</span>
+                        </div>
+                        <div class="card-footer">
+                            <div class="tag-cpa">CPA</div>
+                            <div class="download-btn-text">Download</div>
+                        </div>
+                    </a>
+                </div> </div> </section>
+
+        <section class="intro-text" aria-label="Introduction to our games">
+            <h2 class="section-title">Exclusive Mobile Ports</h2>
+            <p>Experience iconic PC games right on your mobile device! Discover the largest selection of exclusive mobile ports.</p>
+            <p>Craving new thrills? Race through the streets in NFS Most Wanted 2005, dive into the vast open world of GTA 5, or enjoy ultra-realistic crashes in BeamNG Drive — all available now on your smartphone.</p>
+            <p>We bring you an extensive collection of exclusive mobile adaptations of popular PC titles. Enjoy stunning graphics, smooth performance, and all the key features of the originals, optimized perfectly for mobile play.</p>
+            <p>Join millions of gamers worldwide and play top mobile games anytime, anywhere. Download for free and start your adventure on your phone today!</p>
+        </section>
+
+        <section class="why-us" aria-label="Why Choose Us?">
+            <h2 class="section-title">Why Choose Us?</h2>
+            
+            <div class="why-us-items">
+                <div class="why-us-item">
+                    <h3>Exclusive Ports</h3>
+                    <p>Discover top-tier mobile ports available only on our platform — you won’t find them anywhere else.</p>
+                </div>
+                
+                <div class="why-us-item">
+                    <h3>Free Downloads</h3>
+                    <p>Instantly download your favorite games at no cost and dive right into the action.</p>
+                </div>
+                
+                <div class="why-us-item">
+                    <h3>Extensive Library</h3>
+                    <p>Enjoy a regularly updated collection of games tailored to every gaming preference.</p>
+                </div>
+                
+                <div class="why-us-item">
+                    <h3>Premium Quality</h3>
+                    <p>Experience lifelike graphics, fluid performance, and full mobile optimization.</p>
+                </div>
+                
+                <div class="why-us-item">
+                    <h3>Ultimate Convenience</h3>
+                    <p>Play your favorite titles anytime, anywhere with ease.</p>
+                </div>
+            </div>
+        </section>
+		    <section class="socials">
+        <a href="index.html" class="logo" aria-label="ApkMonster">
+            <img src="ApkMonsterlogo.png" alt="ApkMonster logo">
+        </a>
+        <div class="social-links">
+            <a href="https://www.tiktok.com/@apkmonster" target="_blank" aria-label="TikTok">
+                <img src="tik-tok (1).png" alt="TikTok">
+            </a>
+            <a href="https://www.instagram.com/apkmonster" target="_blank" aria-label="Instagram">
+                <img src="instagram (1).png" alt="Instagram">
+            </a>
+            <a href="https://www.youtube.com/@apkmonster" target="_blank" aria-label="YouTube">
+                <img src="youtube (1).png" alt="YouTube">
+            </a>
+            <a href="mailto:apkmonstermailsupport@gmail.com" aria-label="Email" class="email-text-link">
+    mail to: apkmonstermailsupport@gmail.com
+</a>
+        </div>
+    </section>
+    </div> <footer role="contentinfo">
+        <div>&copy; <span id="yr"></span> ApkMonster — all rights reserved</div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
